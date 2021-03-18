@@ -1,0 +1,64 @@
+/* reset css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: Helvetica;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header, footer {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+header {
+    font-family: 'Lobster', cursive;
+    font-size: 80px;
+    font-weight: 50px;
+    height: 50px;
+    padding-top: 70px;
+    padding-left: 550px;
+    background-color: rgb(20, 17, 17);
+    color: rgb(207, 202, 202);
+    box-shadow: 1px 1px 3px 2px #dfd5d5;
+}
+main {
+    flex-grow: 1;
+}
+#breweries {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 0 auto;
+    width: 950px;
+    flex-wrap: wrap;
+}
+.sort {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3px;
+    width: 250px;
+    height: 150px;
+    margin: 5px;
+    border-radius: 7px;
+    border: 3px solid #000;
+}
+footer {
+    justify-content: center;
+}
+
+img {
+    position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+  height:200px;
+  width:200px;
+  border-radius: 50%;
+  border:none;
+  }
+    
