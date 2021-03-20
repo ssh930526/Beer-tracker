@@ -21,20 +21,19 @@ function handleShowModal(){
     const breweryNum= parseInt(this.dataset.breweryId);
     console.log(this.dataset);
     const selectedBrewery = breweries.find(function(brewery){
-        return brewery.breweryId === breweryNum;
+        return brewery.id === breweryNum;
     });
     console.log(selectedBrewery);
 
 
 // add the content to the modal
 $('#patch').attr({
-    src: selectedBrewery.website_url,
-    alt: selectedBrewery.brewery_type
-});
+    href: selectedBrewery.website_url
+}).text(selectedBrewery.name);
 
-$('#name').text(selectedBrewery.brewery.name);
+$('#name').text(selectedBrewery.name);
 
-$('#breweryType').text(selectedBrewery.brewery.brewery_type);
+$('#breweryType').text(selectedBrewery.brewery_type);
 
 $('#state').text(selectedBrewery.state);
 
@@ -56,7 +55,7 @@ function render() {
     const html = breweries.map(function(brewery){
     
         return `
-        <article data-brewery-id="${brewery.breweryId}" class="sort">
+        <article data-brewery-id="${brewery.id}" class="sort">
                 <h1>${brewery.brewery_type}</h1>
                 <p>${brewery.name}</p>
             </article>
