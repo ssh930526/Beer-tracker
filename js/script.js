@@ -19,6 +19,7 @@ function init() {
 
 function handleShowModal(){
     const breweryNum= parseInt(this.dataset.breweryId);
+    console.log(this.dataset);
     const selectedBrewery = breweries.find(function(brewery){
         return brewery.breweryId === breweryNum;
     });
