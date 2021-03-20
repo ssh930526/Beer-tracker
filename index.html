@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script defer src="./js/script.js"></script>
+    
+        <!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    
+<script defer src="./js/script.js"></script>
     <title>Brewery</title>
 </head>
 <body>
@@ -20,9 +25,24 @@
         <section id="breweries">
            
         </section>
+
     </main>
+
     <footer>
         <p>All Rights Reserved Copyright &copy; BEER 2021</p>
     </footer>
+
+    <article class="modal">
+        <div class="container">
+            <div class="brew-1">
+                <h1 id="name"></h1>
+                <p id="breweryType"></p>
+                <p id="state"></p>
+            </div>
+            <div class="brew-2">
+                <img id="patch" src="" alt="">
+            </div>
+        </div>
+    </article>
 </body>
 </html>
