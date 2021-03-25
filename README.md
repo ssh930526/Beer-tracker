@@ -16,3 +16,6 @@ A simple web app that visulize Brewery data
 [Click here](#) to get started
 
 ## Future Enhancements
+click any element to get more data
+
+check the link to the details website
