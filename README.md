@@ -13,7 +13,7 @@ A simple web app that visulize Brewery data
 ![wireframe](./imgs/wireframe.png)
 
 ## Getting Started
-[Click here](#) to get started
+[Click here](https://ssh930526.github.io/project1-Beer/) to get started
 
 ## Future Enhancements
 click any element to get more data
